@@ -9,7 +9,8 @@ def summation(f, lo, hi):
         lo to hi, both ends included. If hi < lo, the sum is empty (0).
     """
     # TODO: Implement the summation from Theory as an explicit loop.
+    #sample testcase will be like summation(lambd i:i**2,1,5)
     total = 0
-    for i in range(lo, hi + 1):
+    for i in range(lo, hi + 1):  #range() default stepsize is incresing 
         total = total + f(i)
     return total
